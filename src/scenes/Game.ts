@@ -67,7 +67,7 @@ export default class Game extends Phaser.Scene {
     this.cameras.main.startFollow(this.mainCharacter, true);
   }
 
-  update(time: number, delta: number): void {
+  update(): void {
     if (!this.cursors || !this.mainCharacter) {
       return;
     }
